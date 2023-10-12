@@ -1,0 +1,83 @@
+.order__summary {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.order__items {
+    list-style: none;
+}
+
+.order__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    border-top: 1px solid gainsboro;
+    padding: 1rem;
+}
+
+.order__quantity {
+    padding: 0;
+}
+
+.order__price{
+    padding: 0;
+}
+
+.order__subtotal {
+    padding: 0;
+}
+
+.order__item img {
+    margin:0.5rem ;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+h2 {
+    text-align: start;
+    margin-left: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.order__confirm {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    padding: 2rem 0;
+}
+.total__price {
+    text-align: end;
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.comfirm__button {
+    align-self: end;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border: 1px solid #977D53;
+    border-radius: 5px;
+    max-height: 3rem;
+    min-width: 10rem;
+    background-color:#977D53;
+    color:white;
+    text-decoration: none;
+    font-size:0.8rem;
+}
+
+@media (min-width: 50rem){
+    /* .checkout__page {
+        display: grid;
+        grid-template-columns: 45% 55%;
+    } */
+
+    /* .checkout__info {
+        padding-left: 3rem;
+    } */
+}

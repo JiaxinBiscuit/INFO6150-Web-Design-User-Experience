@@ -1,0 +1,135 @@
+.plants {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.plants-submenu {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.plants-submenu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: start;
+    padding: 1rem;
+}
+
+.plants-submenu button:hover {
+    color: #66B85D;
+    font-style: italic;
+}
+
+.plants-title {
+    grid-column: 1/span2;
+    grid-row: 1;
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.plants-title span {
+    font-size: 1.2rem;
+    color: #7B7B7B;
+}
+
+.plants-title h1 {
+    font-size: 3.2rem;
+    padding: 2.5rem 0 1rem 0;
+    color: #66B85D;
+}
+
+.plants-cards {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+    grid-column: 1/span12;
+    margin: 2rem;
+    display: grid;
+    grid-row: auto auto 1fr;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card__text {
+    text-align: center;
+}
+
+.card__pic {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+}
+  
+.card__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    background-color: #66B85D;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+}
+
+.card:hover .card__button {
+    opacity: 1;
+}
+
+.card:hover .card__pic {
+    filter: brightness(0.9);
+}
+
+.plant-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem; 
+    left: calc(100% - 1rem - 2.5rem);
+    width: 1.5rem; 
+}
+
+@media (min-width: 44rem){  
+    .card {
+        grid-column: span 4;
+    }
+
+    .card__pic {
+        justify-self: center;
+    }
+
+    .card__button {
+        top: 35%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card__button {
+      transition: none;
+    }
+}

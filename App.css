@@ -1,0 +1,30 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skip-to-content-link {
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  background-color: #B5E5B1;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-to-content-link {
+    transform: none;
+    transition: none;
+  }
+
+  .skip-to-content-link:focus {
+    transform: none;
+  }
+}

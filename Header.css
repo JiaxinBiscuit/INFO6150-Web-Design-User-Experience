@@ -1,0 +1,67 @@
+.header {
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-areas:
+      "brand__name users"
+      "nav nav"
+    ;
+    grid-template-columns: auto 1fr;
+    background-color:white;
+}
+
+.brand__name {
+    grid-area: brand__name;
+    color: black;
+    padding-left: 2rem ;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.cart {
+    grid-area: users;
+    text-align: end;
+    align-self: center;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: gainsboro;
+}
+
+.global-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    display: initial;
+}
+
+.logout {
+    grid-area: users;
+}
+
+.users {
+    justify-self: end;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 1rem 0;
+}
+
+a {
+    padding: 1rem;
+}
+
+@media (min-width: 44rem) {
+    .hamburger-menu {
+      display: none;
+    }
+
+    .global-nav {
+        display: initial;
+    }
+}

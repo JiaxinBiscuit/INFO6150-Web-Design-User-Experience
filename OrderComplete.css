@@ -1,0 +1,28 @@
+.orderComplete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFBF2;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+h1 {
+    padding-top: 5rem;
+}
+
+p {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.shopping__button {
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border: 1px solid #847577;
+    border-radius: 5px;
+    max-height: 3rem;
+    min-width: 10rem;
+    background-color:#847577;
+    color:white;
+    text-decoration: none;
+    font-size:0.8rem;
+}

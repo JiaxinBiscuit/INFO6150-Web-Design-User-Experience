@@ -1,0 +1,20 @@
+.global-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.global-nav__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.global-nav__link:hover {
+    background-color:#B5E5B1;
+    color: black;
+}

@@ -1,0 +1,18 @@
+.logout {
+    display: grid;
+    grid-template-areas:
+    'logout logout__button';
+    grid-auto-columns: auto 1fr;
+
+    padding: 2rem 1rem;
+    align-items: center;
+}
+
+.logout p {
+    grid-area: logout;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+    padding-right:1rem ;
+}
